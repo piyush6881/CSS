@@ -13,8 +13,8 @@
         }
         
        /* here we used div and one element class as attribute  */
-       /* Class* means we are searching an attribute value here its box */
-       /* any place box is written  */
+       /* Class* means we are searching an attribute class with value here its box */
+       /* any place box is written but will not apply unless defined specific ? */
        div[class*="box"]{
         width: 200px;
         margin: 10px auto;
@@ -23,9 +23,12 @@
         color: aliceblue;
         font-size: 30px;
        }
+       /* above will not be applied till you define specific class of attribute.  */
+       /* For box 1 attribute in class below style will be applied  */
        .box-1{
         background-color: crimson;
        }
+       
        .box-2{
         background-color: teal;
        }
