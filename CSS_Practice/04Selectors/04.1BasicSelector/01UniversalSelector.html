@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Selector</title>
+
+    <!-- Internal CSS  -->
+<!-- we are here using internal CSS. by Style tag we want to represent full document by * -->
+    <style>
+        /* when in style comment use it to apply what you what to apply it to */
+        *{
+            background-color: black;
+            /* background full black */
+            color: white;
+            /* Font color is white */
+            font-size: 30px;
+            /* in general applied to all */
+            /* no mater what ever text formaing you have used it will change all font size to the size specified */
+        }
+    </style>
+    <!-- here we applied background  -->
+</head>
+<body>
+    <!-- we applied inline CSS here to increase font so text width will change even if internal CSS is applied -->
+    <h1 style="font-size: 50px;">Universal Selector (*)</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, excepturi?</p>
+    <label>Hello I'm Label</label>
+</body>
+</html>

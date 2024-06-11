@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Selector</title>
+
+    <!-- Internal CSS  -->
+<!-- Class Selector is selected by # like class selector is dot class is #.   -->
+    <style>
+        body{
+            background-color: thistle;
+        }
+        /* id selectors are basically unique if we want to change only for one particular or emphasis */
+        #heading{
+            background-color: crimson;
+            color: aliceblue;
+            /* font-size: 30px; */
+        }
+        /* id here is as given koibhinaam all style given here will be applied uniquely to the id given */
+        #koibhinaam{
+            background-color: teal;
+            color: khaki;
+            font-size: 25px;
+        }
+        /* id is first priority */
+        #unique{
+            background-color: brown;
+            color: khaki;
+            font-size: 50px;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1 id="heading">ID Selector (#)</h1>
+    <p id="koibhinaam">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, excepturi?</p>
+    <label id="unique">Id is always unique</label>
+   
+</body>
+</html>
