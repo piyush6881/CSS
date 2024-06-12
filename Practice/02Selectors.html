@@ -13,21 +13,21 @@
         }
 
         /* by only this color will not be applied. */
-        div [Class*="head"] {
+       div[class*="Head"]{
             width: 200px;
             margin: 10px auto;
             height: 200px;
             border: 100px;
-            background-color: blueviolet;
-            color: brown
+            color:yellow
+           
         }
 
         /* when added this in particular class level element only than color change happened */
-        .Head5 {
+        .Head-5 {
             background-color: rgb(236, 135, 135);
         }
 
-        .Head3 {
+        .Head-3 {
             background-color: blueviolet;
             color: brown
         }
@@ -36,38 +36,38 @@
 
 <body>
     <!-- even if we change the position of input priority is given to ID selector over class -->
-    <h1 Class="Head" ID="bold">This is Heading with ID bold and Class Head</h1>
+    <h1 class="Head" ID="bold">This is Heading with ID bold and class Head</h1>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium exercitationem aut quod ducimus inventore
         maiores fugiat maxime, dolores suscipit necessitatibus provident neque ullam cupiditate recusandae ea explicabo
         mollitia sequi perferendis.</p>
     <hr>
     <!-- we will try outside how element behaves and how in div attribute behaves -->
-    <h1>Outside div with class dot h1 Test Class=Head</h1>
+    <h1>Outside div with class dot h1 Test class=Head</h1>
     <h2>outside div with no selector Test class=Head</h2>
 
-    <div class="Head1">
-        <h1>Test Class=Head</h1>
+    <div class="Head-1">
+        <h1>Test class=Head - 1</h1>
     </div>
-    <div class="Head2">
-        <h2>Test class=Head</h2>
+    <div class="Head-2">
+        <h2>Test class=Head -2</h2>
     </div>
-    <div class="Head3">
-        <h3>Test Class=Head</h3>
-    </div>
-    <div>
-        <p class="Head4">Test Class=Para</p>
+    <div class="Head-3">
+        <h3>Test class=Head-3</h3>
     </div>
     <div>
-        <table Class="Head5" border="1" width="100%">
+        <p class="Head-4">Test class=Para Head-4</p>
+    </div>
+    <div>
+        <table class="Head-5" border="1" width="100%">
             <tr>
-                <th>Test of class and how its applied to table</th>
-                <th>Test of class and how its applied on table</th>
+                <th>Test of class and how its applied to table head-5</th>
+                <th>Test of class and how its applied on table  head-5</th>
             </tr>
         </table>
     </div>
 
     <div class="Head">
-        <p>Test Class=Para in P tab but class is only Head</p>
+        <p>Test class=Para in P tab but class is only Head</p>
     </div>
 
 </body>

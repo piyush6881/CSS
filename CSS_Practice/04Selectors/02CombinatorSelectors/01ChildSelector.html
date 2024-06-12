@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Child Selector</title>
+<!-- Child Selector is represented by dot class followed by > symbol -->
+ <!-- Followed by which tag or element its requried to be applied style at.  -->
+    <style>
+        /* here we identified .parent as class */
+        /* inserted symbol > followed by p as paragraph tag and then the style you want to apply */
+      .parent > p {
+        /* there are many attributes that can be applied and explored.  */
+        /* we are practicing background color and text color here. */
+        background-color: crimson;
+        color: aliceblue;
+      }
+      /* here we have applied identified class by .parent selecting class.  */
+      .parent{
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Child Selector (>)</h1>
+    <div class="parent">
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <div class="child">
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+
+  <hr>
+
+  <div class="parent">
+    <p>Testing Parent most </p>
+  </div>
+  </body>
+</html>
