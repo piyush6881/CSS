@@ -21,6 +21,11 @@
     .parent {
       border: 2px solid black;
     }
+    /* apply style for class:"child" attribute as well.  */
+    .child{
+      border: 2px solid black;
+      color: red
+    }
   </style>
 </head>
 
@@ -40,7 +45,13 @@
 
 
   <hr>
+  <!-- Class Selected Parent by dot parent then we put symbol > progression followed by element here is P.
+    .parent>p {
+    Style applied is background color and text color.
+      background-color: crimson;
+      color: aliceblue;  -->
 
+      <!-- Child Selector (>): Targets elements that are direct children of a specified element. -->
   <div class="parent">
     <p>Testing Parent class of parent</p>
     <p>Testing Parent class of parent</p>
@@ -54,6 +65,24 @@
     <!-- closed parent -->
     <p>Testing Parent class of Again Parent</p>
     <p>Testing Parent class of Again Parent</p>
+  </div>
+  <!-- lets see what happens outside div -->
+  <p>Testing withtout div</p>
+  <p>Testing withtout div</p>
+  <p>Testing withtout div</p>
+  <!-- div but without any class -->
+  <div>
+    <p>Testing with div but no class</p>
+    <p>Testing with div but no class</p>
+    <p>Testing with div but no class</p>
+    <p>Testing with div but no class</p>
+    <p>Testing with div but no class</p>
+  </div>
+  <!-- div with class child -->
+  <div class="child">
+    <p>Testing Parent class of child</p>
+    <p>Testing Parent class of child</p>
+    <p>Testing Parent class of child</p>
   </div>
 </body>
 

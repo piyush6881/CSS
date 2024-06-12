@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Child Selector</title>
+  <!-- Child Selector is represented by dot class followed by > symbol -->
+  <!-- Followed by which tag or element its requried to be applied style at.  -->
+  <style>
+    /* we by just applying div font size can change all element in div size to same */
+    div{
+        font-size: 30px;
+    }
+   div>ul{
+    color: red;
+   }
+   /* in this child will not work you have to give decendant only */
+   div dt {
+    color: blue;
+   }
+   div dd{
+    color: green;
+   }
+   
+  </style>
+</head>
+
+<body>
+<h1>Child Selector</h1>
+<div>
+    <ul>
+        <li>Parent in ul list</li>
+        <li>Parent in ul list</li>
+        <li>Parent in ul list</li>
+        <li>Parent in ul list</li>
+        <li>Parent in ul list</li>
+    </ul>
+</div>
+<div>
+    <dl>
+        <dt>Parent in dt list</dt>
+        <dd>Child in dd</dd>
+        <dd>Child in dd</dd>
+        <dd>Child in dd</dd>
+    </dl>
+</div>
+<hr>
+<div>
+    <ul>
+        <li>Parent in ul list</li>
+        <li>Parent in ul list</li>
+        <li>Parent in ul list</li>
+        <li>Parent in ul list</li>
+        <li>Parent in ul list</li>
+    </ul>
+</div>
+<div>
+    <dl>
+        <dt>Parent in dt list</dt>
+        <dd>Child in dd</dd>
+        <dd>Child in dd</dd>
+        <dd>Child in dd</dd>
+    </dl>
+</div>
+</body>
+
+</html>

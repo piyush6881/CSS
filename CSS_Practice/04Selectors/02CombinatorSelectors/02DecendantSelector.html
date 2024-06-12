@@ -1,32 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Decendant Selector</title>
 
-    <style>
-      .parent p {
-        background-color: crimson;
-        color: aliceblue;
-      }
-      .parent{
-        border: 2px solid black;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Decendant Selector ( )</h1>
-    <div class="parent">
-      <p>Lorem ipsum dolor sit amet.</p>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <div class="child">
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Decendant Selector</title>
+
+  <style>
+    /* decendant is done by just a space between class */
+    .parent p {
+      background-color: crimson;
+      color: aliceblue;
+    }
+
+    /* here we have kept code as parent but are defining class only */
+    .parent {
+      border: 2px solid black;
+    }
+
+    /* here again we are defining class  */
+    .child p {
+      border: 2px solid red;
+      color: black;
+      background-color: pink;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Decendant Selector ( )</h1>
+  <!-- here parent class attribute inside div is given css (internal type) -->
+  <div class="parent">
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <!-- ideally it should work without attribution also for parent and child div in div is parent child but doesnt work.  -->
+    <div class="child">
       <p>Lorem ipsum dolor sit amet.</p>
       <p>Lorem ipsum dolor sit amet.</p>
       <p>Lorem ipsum dolor sit amet.</p>
     </div>
-  </body>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+  </div>
+  <!-- Descendant Selector (space): Targets elements that are descendants (children, grandchildren, etc.)
+    of a specified element. -->
+  <hr>
+
+</body>
+
 </html>
