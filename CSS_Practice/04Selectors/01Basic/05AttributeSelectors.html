@@ -14,7 +14,9 @@
         
        /* here we used div and one element class as attribute  */
        /* Class* means we are searching an attribute class with value here its box */
-       /* any place box is written but will not apply unless defined specific ? */
+       /* IMP: it should not have space after div. [] to apply brackets and input content ? */
+       /* when we write class we put *for we want to search univerally across the entire page */
+       /* for a class which has a value here box make sure due to case sensitive we type the class and value correctly. */
        div[class*="box"]{
         width: 200px;
         margin: 10px auto;
@@ -23,7 +25,8 @@
         color: aliceblue;
         font-size: 30px;
        }
-       /* above will not be applied till you define specific class of attribute.  */
+       /* above is applied to all div container a block level element */
+       /* now in general above is applied. if specific class to have specific style we can use class selector  */
        /* For box 1 attribute in class below style will be applied  */
        .box-1{
         background-color: crimson;
