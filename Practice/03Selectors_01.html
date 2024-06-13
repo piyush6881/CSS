@@ -2,67 +2,79 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Child Selector</title>
-  <!-- Child Selector is represented by dot class followed by > symbol -->
-  <!-- Followed by which tag or element its requried to be applied style at.  -->
-  <style>
-    /* we by just applying div font size can change all element in div size to same */
-    div{
-        font-size: 30px;
-    }
-   div>ul{
-    color: red;
-   }
-   /* in this child will not work you have to give decendant only */
-   div dt {
-    color: blue;
-   }
-   div dd{
-    color: green;
-   }
-   
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector</title>
+
+    <style>
+        *{
+            margin: 10px;
+        }
+    </style>
 </head>
 
 <body>
-<h1>Child Selector</h1>
-<div>
-    <ul>
-        <li>Parent in ul list</li>
-        <li>Parent in ul list</li>
-        <li>Parent in ul list</li>
-        <li>Parent in ul list</li>
-        <li>Parent in ul list</li>
-    </ul>
-</div>
-<div>
-    <dl>
-        <dt>Parent in dt list</dt>
-        <dd>Child in dd</dd>
-        <dd>Child in dd</dd>
-        <dd>Child in dd</dd>
-    </dl>
-</div>
-<hr>
-<div>
-    <ul>
-        <li>Parent in ul list</li>
-        <li>Parent in ul list</li>
-        <li>Parent in ul list</li>
-        <li>Parent in ul list</li>
-        <li>Parent in ul list</li>
-    </ul>
-</div>
-<div>
-    <dl>
-        <dt>Parent in dt list</dt>
-        <dd>Child in dd</dd>
-        <dd>Child in dd</dd>
-        <dd>Child in dd</dd>
-    </dl>
-</div>
+    <h1>selectors</h1>
+    <p>CSS selectors are patterns used to select and style HTML elements.
+        Here are some basic types of selectors:
+    </p>
+    <h3>1. Universal Selector (*): Selects all elements.</h3>
+    <p>* {
+        margin: 0;
+        padding: 0;
+        }</p>
+
+    <h3>2. Element Selector (element): Selects all elements of a specific type.</h3>
+    <p>p {
+        font-size: 16px;
+        }</p>
+
+    <h3>3. Class Selector (.class): Selects all elements with the specified class.</h3>
+    <p>.highlight {
+        background-color: yellow;
+        }</p>
+
+    <h3>4. ID Selector (#id): Selects an element with the specified ID.</h3>
+    <p>#header {
+        font-size: 24px;
+        }</p>
+
+    <h3>5. Attribute Selector ([attribute=value]): Selects elements with the specified attribute and value.</h3>
+    <p>[type="text"] {
+        border: 1px solid #000;
+        }</p>
+
+    <h3>6. Descendant Selector (ancestor descendant): Selects all descendant elements of a specified ancestor.</h3>
+    <p>div p {
+        color: blue;
+        }</p>
+
+    <h3>7. Child Selector (parent > child): Selects all direct children of a specified parent.</h3>
+    <p>div > p {
+        font-weight: bold;
+        }</p>
+
+    <h3>8. Adjacent Sibling Selector (previous + next): Selects the next sibling element immediately following the specified
+        element.</h3>
+    <p>h1 + p {
+        color: green;
+        }</p>
+
+    <h3>9. General Sibling Selector (previous ~ siblings): Selects all sibling elements following the specified element.</h3>
+    <p>h1 ~ p {
+        text-decoration: underline;
+        }</p>
+
+<h3>10. Pseudo-class Selector (:pseudo-class): Selects elements in a specific state.</h3>    
+    <p>a:hover {
+        color: red;
+        }</p>
+
+    <h3>11. Pseudo-element Selector (::pseudo-element): Selects and styles parts of an element.</h3>
+    <p>p::first-line {
+        font-weight: bold;
+        }</p>
+
 </body>
 
 </html>
