@@ -20,6 +20,7 @@
     <!-- Adjacent Sibling Selector (+): Targets an element that is the next sibling 
      (immediately following) of a specified element. -->
     <h1>Adjacent Sibling Selector (+)</h1>
+    <!-- parent will be contained in border and + will be outside the border -->
     <div class="parent">
       <p>Lorem ipsum dolor sit amet.</p>
       <div class="child">
@@ -33,5 +34,20 @@
     <p>Lorem ipsum dolor sit amet.</p>
     <p>Lorem ipsum dolor sit amet.</p>
     <p>Lorem ipsum dolor sit amet.</p>
+
+
+    <hr>
+
+    <h1>Testing Adjacent Sibling</h1>
+    <!-- parent in border and by +p any p outside parent will be styled -->
+    <div class="parent">
+      <p>Test first div</p>
+      <div class="child">
+        <p>child div and parainsert inside div</p>
+      </div>
+      <p>again para insert outside child div but inside parent div</p>
+    </div>
+    <!-- this is where our adjacent sibling + is applied -->
+      <p>para outside div</p>
   </body>
 </html>

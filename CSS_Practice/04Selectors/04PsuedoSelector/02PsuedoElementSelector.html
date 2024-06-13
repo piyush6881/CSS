@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Psuedo Element Selector</title>
-
+<!-- specific element characterstics if you want to insert something before or after -->
     <style>
       h1::before {
         content: "~ ";
@@ -12,14 +12,17 @@
       h1::after{
         content: " !";
       }
+      /* specific charecterset like first letter */
       p::first-letter{
         font-size: 70px;
         color: blue;
       }
+      /* only the first line  */
       p::first-line{
         background-color: crimson;
         color: aliceblue;
       }
+      /* only on selection what to happen */
       p::selection{
         background-color: teal;
         color: khaki;
