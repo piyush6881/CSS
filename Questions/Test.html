@@ -1,14 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Font awesome</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body>
-<h1>Font Awesome</h1>
+    <style>
+        div {
+            direction: rtl;
+        }
 
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWdJREFUSEu11L1KHkEUxvGfFja5AAvBL6KipYWFAbFUiFhY2SjY2dvoFSi2diLkCqwSSWchWgUEQVAJUQuLXEDAKroTdmXysr47u/pON8OZ53/mnDNPlw6vrg7rqwPoxTf8xQJ+pySXCgjiZxjORX9hOgWSAgjiJxjBfQ4YwA1mqiBVgDjzB3zKAafoQ+VL2gHKxOMXJEFeA7QTL3obylQJKQOkiCdDWgF1xJMgMSCelnB5CHcps45B3Oax/01XDLjERCRYNWGt7Kfo4ByTYR+LXGP0nQBXGG8FFNpFJgX8I36WlKo7L034C2G13vt3WFaGOPAYs/ic+1DMWcMBvmO+KWA1y/IL/mSWsJ5DejCHPXzAEg6bAkLGu9goKVF46Ra231KiQnc5850VTOExK9mPzIv28TUCN+pB4jdo3uSOAIJj9tdRjmLDzw8O8LLKxnQROxirCbnAZtanoypATd324XX9pjb8GaM1VxnecyIWAAAAAElFTkSuQmCC"/>
+        span {
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+        }
+
+        table {
+            width: 100%;
+            height: 200px;
+            border: 2px;
+        }
+
+        h1 {
+            text-shadow: 20px 20px 5px rgba(56, 12, 214, 0.5);
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Text</h1>
+    <div>
+        <p>This is text</p>
+    </div>
+
+    <table border="1">
+        <tr>
+            <th><span>
+                    Vertical Text
+                </span></th>
+            <th>Normal Text</th>
+            <th>Normal Text</th>
+            <th>Normal Text</th>
+            <th>Normal Text</th>
+            <th>Normal Text</th>
+            <th>Normal Text</th>
+            <th>Normal Text</th>
+            <th>Normal Text</th>
+            <th>Normal Text</th>
+            <th>Normal Text</th>
+            <th>Normal Text</th>
+        </tr>
+    </table>
+
 </body>
+
 </html>

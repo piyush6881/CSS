@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background CSS</title>
+    <style>
+        div {
+            border: 10px dotted rgb(4, 0, 255);
+            height: 500px;
+            margin: 10px;
+            font-size: 30px;
+        }
+
+        /* fixing border, height, margin and font size puts size to initial div.  */
+        .background-attachment {
+            background-image: url(../image/Margherita.jpg);
+            background-repeat: no-repeat;
+            /* cover means streached to fool width of image */
+            background-size: cover;
+            /* fixes image postion in center */
+            background-position: center;
+            /* image will be fixed and will be locked in background.  */
+            background-attachment: scroll;
+            /* image will be in center but fixed frame will be scrolled over image fixed on background */
+            background-attachment: fixed;
+            color: blueviolet;
+        }
+
+        .background-clip {
+            background-image: url(../Image/Margherita.jpg);
+            background-repeat: no-repeat;
+            padding: 100px;
+            background-clip: border-box;
+            background-clip: padding-box;
+            background-clip: content-box;
+        }
+            p {
+                text-align: center;
+            }
+    </style>
+
+
+</head>
+
+<body>
+    <h1>BACKGROUND COMMAND LIST</h1>
+    <hr>
+
+    <div class="background-attachment">background-attachment</div>
+
+    <hr>
+    <div class="background-clip">background-clip</div>
+    <p>End of Page</p>
+
+</body>
+
+</html>

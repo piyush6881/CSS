@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background In CSS</title>
+
+    <style>
+        div {
+            border: 10px dashed red;
+            height: 500px;
+            margin: 20px 0px;
+            font-size: 30px;
+        }
+
+        /* fixing border, height, margin and font size puts size to initial div.  */
+        .background-attachment {
+            background-image: url(../../Image/Margherita.jpg);
+            /* if you dont want image to be repeated */
+            background-repeat: no-repeat;
+            /* streach the image to full page width specially for images that are not of width of page */
+            background-size: contain;
+            /* image is positioned to center */
+            background-position: center;
+            /* background is scroll so image will be scrolled  */
+            background-attachment: scroll;
+            /* image will be in center but fixed frame will be scrolled over image fixed on background */
+            background-attachment: fixed;
+
+        }
+
+        .background-clip {
+            background-image: url(../../image/Margherita.jpg);
+            background-repeat: no-repeat;
+            padding: 100px;
+            background-clip: border-box;
+            /* padding with text */
+            background-clip: padding-box;
+            /* image crop happenes to content box */
+            background-clip: content-box;
+
+        }
+
+        .background-color {
+            background-color: brown;
+            color: aliceblue;
+        }
+
+        .background-image {
+            background-image: url(../../../HTML/image/AtalPedestrianBridge.jpg);
+        }
+
+        .background-origin {
+            background-image: url(../../../HTML/image/AtalPedestrianBridge.jpg);
+            background-repeat: no-repeat;
+            padding: 100px;
+            /* image origin starting point */
+            background-origin: border-box;
+            /* image origin statrs from padding box given */
+            background-origin: padding-box;
+            /* image origin starts starts from content box */
+            background-origin: content-box;
+
+        }
+
+        /* positions the image where you need left, right, center, bottom left even x and y axis */
+        .background-position {
+            background-image: url(../../../HTML/image/AtalPedestrianBridge.jpg);
+            background-repeat: no-repeat;
+            background-size: 200px;
+            background-position: center;
+            background-position: top;
+            background-position: right;
+            background-position: left;
+            background-position: bottom;
+            background-position: 50% 50%;
+
+        }
+
+        /* image to be repeated or not to be repeated.  */
+        .background-repeat {
+            background-image: url(../../../HTML/image/AtalPedestrianBridge.jpg);
+            background-repeat: repeat-y;
+            background-repeat: repeat-x;
+            background-repeat: no-repeat;
+        }
+/* Size the image wether to repeat, contain with in container, or cover full page.  */
+        .background-size {
+            background-image: url(../../../HTML/image/AtalPedestrianBridge.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-size: cover;
+            background-size: 200px;
+        }
+
+        .background-shorthand {
+            border: 10px dotted blue;
+            height: 100vh;
+            background: url(../../../HTML/image/AtalPedestrianBridge.jpg)no-repeat center center/cover;
+        }
+
+        .background-multiple {
+            background-image: url(../../../HTML/image/Cattering.png), url(../../../HTML/image/AtalPedestrianBridge.jpg);
+            background-size: 200px, 300px;
+            background-repeat: no-repeat;
+            background-position: left, right;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Background In CSS</h1>
+    <hr />
+    <ul>
+        <!-- list of things we are going to apply -->
+        <!-- First step is to insert image by background image by url -->
+        <!-- later we devined size of background -->
+        <!--  .background-attachment{
+            background-attachment: scroll;
+            background-attachment: fixed; -->
+
+        <li>background-attachment</li>
+        <li>background-clip</li>
+        <li>background-color</li>
+        <li>background-image</li>
+        <li>background-origin</li>
+        <li>background-position</li>
+        <li>background-repeat</li>
+        <li>background-size</li>
+        <li>background-shorthand</li>
+        <li>background-multiple</li>
+    </ul>
+
+    <hr>
+    <!-- background-attachment -->
+    <div class="background-attachment">background-attachment</div>
+    <div class="background-clip">background-clip</div>
+    <div class="background-color">background-color</div>
+    <div class="background-image">background-image</div>
+    <div class="background-origin">background-origin</div>
+    <div class="background-position">background-position</div>
+    <div class="background-repeat">background-repeat</div>
+    <div class="background-size">background-size</div>
+    <div class="background-shorthand">background-shorthand</div>
+    <div class="background-multiple">background-multiple</div>
+</body>
+
+</html>
