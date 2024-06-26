@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Extinguisher Analysis Form</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aqua;
+            margin: 0;
+            padding:20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(230, 143, 82, 0.397);
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: rgb(2, 2, 85);
+        }
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .form-group {
+            flex: 1 1 45%;
+            margin-bottom: 20px;
+        }
+        label{
+            display: block;
+            margin-bottom: 5px;
+            color: blueviolet;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        button {
+            background-color: crimson;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+<div clas="container">
+<h1>Fire Extinguisher Analysis Form</h1>
+<form action="">
+    <div class="form-group">
+<label for="extinguishertype">Fire Extinguisher Type</label>
+<select name="extinguishertype" id="extinguishertype">
+<option value="water">Water</option>
+<option value="foam">Foam</option>
+<option value="powder">Powder</option>
+<option value="co2">CO2</option>
+<option value="wetchemical">Wet Chemical</option>
+</select>
+    </div>
+    <div class="form-group">
+        <label for="weight">Weight (kg)</label>
+        <input type="number" id="weight" name="weight">
+    </div>
+    <div class="form-group">
+        <label for="lastchecked">Last Checked Date</label>
+        <input type="date" id="lastchecked" name="lastchecked">
+    </div>
+    <div class="form-group">
+        <label for="mfgdate">Manufacture Date</label>
+        <input type="date" id="mfgdate" name="mfgdate">
+    </div>
+    <div class="form-group">
+        <label for="refilldue">Refill Due Date</label>
+        <input type="date" id="refilldue" name="refilldue">
+    </div>
+    <div class="form-group">
+        <label for="hydrotestdue">Hydro Test Due Date</label>
+        <input type="date" id="hydrotestdue" name="hydrotestdue">
+    </div>
+    <div class="form-group">
+<label for="totalwt">Total Weight</label>
+<input type="number" id="totalwt" name="totalwt">
+    </div>
+    <div class="form-group">
+        <label for="emptywt">Empty Weight</label>
+        <input type="number" id="emptywt" name="emptywt">
+    </div>
+    <div class="form-group">
+        <label for="entryby">Entry By</label>
+        <input type="text" id="entryby" name="entryby">
+    </div>
+    <div class="form-group">
+        <label for="entrydate">Entry Date</label>
+        <input type="date" id="entrydate" name="entrydate">
+    </div>
+    <div class="form-group" style="flex: 1 1 100%; text-align: center;">
+        <button type="submit">Submit</button>
+    </div>
+</form>
+</div>    
+</body>
+</html>

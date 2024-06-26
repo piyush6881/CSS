@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSERMTECH</title>
+    <style>
+        /* selectec bony margin and font family for inside page  body color background rgb liner gradient*/
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+                linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
+                linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
+        }
+
+        /* navbar for home logo. */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: rgb(14, 13, 13);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* anchor tag in navbar */
+        .navbar a {
+            color: rgba(41, 40, 40, 0.507);
+            text-decoration: none;
+            padding: 8px 16px;
+        }
+
+        /* inside navbar social icon action and margin between 2 */
+        .navbar .social-icons a {
+            margin-left: 10px;
+        }
+
+        /* subscribe form in navbar to be in line */
+        .navbar form {
+            display: inline;
+        }
+
+        /* input in form to be email to subscribe to news letters by email. */
+        .navbar input[type="email"] {
+            padding: 5px;
+            margin-right: 10px;
+        }
+
+        /* padding given for section main headding section for text */
+        .section {
+            padding: 60px 20px 20px 20px;
+            margin-top: 60px;
+        }
+
+        /* id home where we have inserted background image ang text. */
+        .home {
+            background-image: url(../Image/HSEFSPL.webp);
+            background-size: cover;
+            color: rgb(15, 30, 243);
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        /* inside home h1 font is defined size */
+        .home h1 {
+            font-size: 50px;
+        }
+
+        /* split 80-20 for text and video insert flex to create partigion  */
+        .split-80-20 {
+            display: flex;
+            background-color: #fdfcfc75;
+            padding: 10px;
+        }
+
+        /* by CSS We created table in flex 80% and 20% for class split */
+        .split-80-20 .text {
+            width: 80%;
+            padding: 20px;
+        }
+
+        /* by CSS We created table to insert video width 20% padding from flex 20px is good to see reasonable distance */
+        .split-80-20 .video {
+            width: 20%;
+            padding: 20px;
+        }
+
+        /* linear gradient use inplace of background image.  */
+        .split-20-80 {
+            display: flex;
+            background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+                linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
+                linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
+            padding: 20px;
+        }
+
+        /* repeate video inert properties for each line with padding. */
+        .split-20-80 .video {
+            width: 20%;
+            padding: 20px;
+        }
+
+        /* defined 20% so now 80 % Text portion size 20p.  */
+        .split-20-80 .text {
+            width: 80%;
+            padding: 20px;
+        }
+
+        /* justify content space around gives properties of even spaces around text. */
+        .service {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        /* finally service items  */
+        .service .service-item {
+            width: 22%;
+            padding: 10px;
+            text-align: center;
+            background-color: #f4f4f488;
+            height: 400px;
+        }
+
+        /* image inside service */
+        .service img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* footer inserted with only plain gray and padding given.  */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        /* padding was needed to aline text in h2  */
+        h2 {
+            padding: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="../Image/LogoEHSTECH.jpg" alt="Company Logo" style="height:40px;">
+        </div>
+        <div class="navigation">
+            <a href="#home">Home</a>
+            <a href="#about-us">About Us</a>
+            <a href="#service">Service</a>
+            <a href="#login">Login</a>
+            <a href="#contact-us">Contact Us</a>
+        </div>
+        <div class="social-icons">
+            <form>
+                <input type="email" placeholder="E-mail Subscribe"><button>Submit</button>
+            </form>
+            <a href="#blog"><img src="../Image/blogger.jpg" alt="Blog" style="height:20px;"></a>
+            <a href="#facebook"><img src="../Image/facebook.png" alt="Facebook" style="height:20px;"></a>
+            <a href="#twitter"><img src="../Image/twitter.png" alt="Twitter" style="height:20px;"></a>
+            <a href="#instagram"><img src="../Image/instagram.png" alt="Instagram" style="height:20px;"></a>
+            <a href="#youtube"><img src="../Image/youtube.png" alt="YouTube" style="height:20px;"></a>
+        </div>
+    </div>
+    <div id="home" class="section home">
+        <h1>HSE-RM TECH</h1>
+        <p>Your Partner In Safety...</p>
+        <p>Welcome to our company website. We offer the best services in the industry.</p>
+        <div class="split-80-20">
+            <div class="text">
+                <p>Welcome! We specialize in comprehensive HSE&F assessments and custom training
+                    development to ensure the highest safety standards in your operations. We specialize in
+                    comprehensive HSE&F assessments and custom training development to ensure the
+                    highest safety standards in your operations. <br><br></p>
+            </div>
+            <div class="video">
+                <iframe width="100%" height="auto" src="../Image/HSERMCPV.mp4" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div id="about-us" class="section">
+        <h2>About Us</h2>
+        <div class="split-20-80">
+            <div class="video">
+                <iframe width="100%" height="auto" src="../Image/HSERMS.mp4" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="text">
+                <p>Our company was founded with a mission to deliver excellence in every project we undertake.
+                    At HSE-RM Solutions, we specialize in comprehensive EHS&F (Environmental, Health, Safety & Fire)
+                    services with a focus on analytics and data-driven decision-making. <br> <br>
+                    Our expertise includes KPI Preparation Services, encompassing:
+                    Data Collection and Monitoring: Implementing advanced systems to capture real-time data.
+                    Data Analysis: Leveraging cutting-edge analytics to interpret safety and health data.
+                    Custom Data Models: Developing tailored models to fit unique industry requirements.
+                    We also excel in creating relatable forms to generate actionable data, enhancing the effectiveness
+                    of safety protocols and compliance measures. Our goal is to empower organizations through robust
+                    risk management and safety solutions.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="service" class="section service">
+        <h2>Service</h2><br>
+        <p><b>Consulting & Training Services:</b> <br><br>
+            HSE&F Assessment and Audits: We conduct thorough assessments and audits based on the latest national and
+            international standards to ensure your operations meet the highest safety and efficiency benchmarks.
+            <br><br>
+            Custom Training Development: Our training programs are designed to address the unique needs of your
+            industry, ensuring that your team is well-prepared to handle any challenges.
+        </p>
+    </div>
+    <div id="service" class="section service">
+
+        <div class="service-item">
+            <img src="../Image/KPIPS.webp" alt="Service 1">
+            <p><b>KPI Preparation Services</b><br>
+                KPI stands for Key Performance Indicator. Key Performance Indicators are connected to your goals and
+                objectives—they are quantifiable, outcome-based statements that outline and measure your organization’s
+                most important outputs.
+            </p>
+        </div>
+        <div class="service-item">
+            <img src="../Image/DCAMS.webp" alt="Service 2">
+            <p><b>Data Collection and Monitoring:</b><br>
+                Data collection methods are essential for organizations wishing to make informed decisions. Knowing how
+                to collect data, what type of data to collect, and how to use the data to make decisions, We develop &
+                deliver as part of our managed Services.</p>
+        </div>
+        <div class="service-item">
+            <img src="../Image/DAS.webp" alt="Service 3">
+            <p><b>Data Analysis:</b><br>
+                This idea lies at the root of data analysis. When we can extract meaning from data, it empowers us to
+                make better decisions. And we’re living in a time when we have more data than ever at our fingertips. We
+                develop & deliver as part of our managed Services.
+            </p>
+        </div>
+        <div class="service-item">
+            <img src="../Image/CDMS.webp" alt="Service 4">
+            <p><b>Custom Data Models:</b><br>
+                The data object engine in Flowable Work or Engage provides the possibility to define a data object
+                definition that specifies which fields are needed for the master data values. The name and key fields
+                are required because they are needed for every master data value. We develop & deliver as part of our
+                managed Services.
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Company Name. All rights reserved.</p>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloneUbereats</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 10px;
+            padding: 0;
+            
+        }
+        .navbar {
+            position: fixed;
+            width: 98%;
+            display: flex;
+            justify-content: space-between;
+            background-color: rgba(255, 255, 255, 0.356);       
+        }
+       .menu-icon{
+            display: none;
+            font-size: 24px;
+        }
+        .buttons {
+            display: flex;
+            align-items: center;
+        }
+        .buttons button {
+            margin-left: 10px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .buttons .login {
+            background: white;
+            color: black;
+            border-radius: 10px;
+        }
+        .buttons .signup {
+            background: black;
+            color: white ;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        .banner {
+            width: 100%;
+            height: 400px;
+            background: url(../Image/ubermain.PNG) no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+        .banner h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: justify;
+            color: black;
+        }
+        .banner input[type="text"],
+        .banner button {
+            padding: 10px;
+            margin: 5px;
+            border-radius: 15px;
+        }
+        .banner button {
+            background: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .section {
+            padding: 40px 20px;
+            text-align: justify;
+        }
+        .three-columns {
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .three-columns .column {
+            width: 30%;
+            padding: 10px;
+            text-decoration: none;
+        }
+        .three-columns img {
+            width: 100%;
+        }
+        .map-container {
+            text-align: center;
+        }
+        .map-container a {
+            display: block;
+            margin: 20px 200px;
+        }
+        .location_list {
+            display: flex;
+            justify-content: space-between;
+            text-decoration: none;
+        }
+        .location_list .location {
+            width: 22%;
+            padding: 10px;
+            text-decoration: none;
+        }
+        .footer {
+            background: rgba(128, 128, 128, 0.342);
+            color: white;
+            padding: 20px;
+            text-align: left;
+        }
+        .footer a {
+            color: black;
+            margin-right: 20px;
+        }
+        .footer .social-icons {
+            display: flex;
+        }
+        .footer .social-icons img {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"><img src="../Image/logoubereats.jpg" alt="Company LOGO" width="200px" ></div>
+        <div class="buttons">
+                <button class="login">Log In</button>
+                <button class="signup">Sign Up</button>
+                <div class="menu-icon">=</div>
+        </div>
+    </nav>
+    <div Class="banner">
+            <h1>Order delivery near you</h1>
+            <form>
+                <input type="text" placeholder="Enter delivery adderss">
+                <input type="text" placeholder="Deliver now">
+                <button>Search here</button><br>
+                <a href="#signup" style="text-decoration: none; color: black;">Or Sign In</a>
+            </form>
+    </div>
+
+    <div class="section">
+        <div class="three-columns">
+            <div class="column">
+                <img src="../Image/Feedemp.webp" alt="img1">
+                <h2>Feed your employee</h2>
+                <p><a href="#caba">Create a business account</a></p>
+            </div>
+            <div class="column">
+                <img src="../Image/Yourrestaurant,delivered.webp" alt="img2">
+                <h2>Your restaurant, delivered</h2>
+                <p><a href="ayr">Add your restaurant</a></p>
+            </div>
+            <div class="column">
+                <img src="../Image/Deliverwith.webp" alt="img2">
+                <h2>Devliver with Uber Eats</h2>
+                <p><a href="sutd">Sign up to deliver</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Cities near me</h2>
+        <p>View all 500+ cities</p>
+        <a href="https://www.google.com/maps"><img src="../Image/uberlocationmap.png" alt=""></a>
+    </div>
+        <div class="section location_list">
+             <div class="location">
+                 <p><a href="#akron">Akron</a><br>
+                    <a href="#Albuquerque">Albuquerque</a>   <br>
+                    <a href="#Bridgeport">Bridgeport</a> <br>
+                    <a href="#Concord">Concord</a> <br>
+                    <a href="#Dayton">Dayton</a> <br>
+                    <a href="#El Paso">El Paso</a></p>
+             </div>
+             <div class="location">
+                <p>Hartford <br>
+                    Houston <br>
+                    Indianapolis <br>
+                    McAllen <br>
+                    Mesa <br>
+                    Milwaukee</p>
+            </div>
+            <div class="location">
+                <p>Nashville <br>
+                    New Orleans <br>
+                    Oklahoma City <br>
+                    Omaha <br>
+                    Orlando <br>
+                    Palm Bay</p>
+            </div>
+            <div class="location">
+                <p>Providence <br>
+                    Queens <br>
+                    San Antonio <br>
+                    Stony Brook <br>
+                    Tucson <br>
+                    West Hollywood</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Countries with Uber Eats</h2>
+            <p>View all countries</p>
+            <div class="location_list">
+                <div class="location">
+                     <p>Australia <br>
+                        Belgium <br>
+                        Canada <br>
+                        Chile <br>
+                        Costa Rica <br>
+                        Dominican Republic <br>
+                        Ecuador <br>
+                        El Salvador </p>
+                </div>
+                <div class="location">
+                    <p>France <br>
+                        Germany <br>
+                        Guatemala <br>
+                        Ireland <br>
+                        Italy <br>
+                        Japan <br>
+                        Kenya <br>
+                        Mexico </p>
+               </div>
+               <div class="location">
+                     <p>Netherlands <br>
+                        New Zealand <br>
+                        Panama <br>
+                        Poland <br>
+                        Portugal <br>
+                        South Africa <br>
+                        Spain <br>
+                        Sri Lanka </p>
+                </div>
+                <div class="location">
+                    <p>Sweden <br>
+                        Switzerland <br>
+                        Taiwan (ROC) <br>
+                        United Kingdom <br>
+                        United States</p>
+                </div>
+             </div>
+        </div>
+        <div class="section" style="display: flex;">
+            <div style="width: 60%;">
+                <img src="../Image/logoubereats.jpg" alt="Company logo" width="200px"><br><br>
+                <button><img src="" alt="android"></button>
+                <button><img src="" alt="apple"></button>
+            </div>
+            <div style="width:40%;">
+                <div class="section location_list">
+                    <div class="location">
+                        <p><a href="#gethelp">Get Help</a><br>
+                           <a href="#buygiftcards">Buy gift cards</a>   <br>
+                           <a href="#Addyourrestaurant">Add your restaurant</a> <br>
+                           <a href="#Signuptodeliver">Sign up to deliver</a> <br>
+                           <a href="#Createabusinessaccount">Create a business account</a> <br>
+                           <a href="#Promotions">Promotions</a></p>
+                    </div>
+                    <div class="location">
+                       <p><a href="#Restaurantsnearme">Restaurants near me</a> <br>
+                        <a href="#Viewallcities">View all cities</a> <br>
+                         <a href="#Viewallcountries">View all countries</a> <br>
+                         <a href="#Pickupnearme">Pickup near me</a> <br>
+                         <a href="#AboutUberEats">About Uber Eats</a> <br>
+                         <a href="Shopgroceries">Shop groceries</a></p>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="social-icons">
+                <img src="../Image/facebook.png" alt="Facebook" style="width:20px">
+                <img src="../Image/instagram.png" alt="instagram" style="width:20px">
+                <img src="../Image/twitter.png" alt="twitter" style="width:20px">
+            </div>
+            <div>
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#">Do not sell or share my personal information</a>
+            </div>
+            <div>
+                <p>Google Privacy Policy and Terms of Service Apply. <a href="#">Click here</a></p>
+            </div>
+            <div style="text-align: right;">2024 copyright Piyush Tripathi</div>
+        </footer>
+        <div class="footer">
+            <p>&copy; 2024 Company Name. All rights reserved.</p>
+    </div>
+
+
+</body>
+
+</html>

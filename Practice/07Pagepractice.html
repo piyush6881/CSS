@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PagePractice</title>
+    <Style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(45deg, red, rgb(110, 110, 224) 70%), 
+            linear-gradient(45deg, green, yellow 70%), 
+            linear-gradient(45deg, pink, rgb(153, 1, 255) 70%);
+        }
+        .navbar{
+            /* Display Flex: The element behaves like a block-level element and lays out its content according to the flexbox model. */
+            display: flex;
+            /* Distributed alignment justify-content: space-between; Distribute items evenly
+                The first item is flush with the start, the last is flush with the end */
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px, 10px;
+            background-color: white;
+            color: darkmagenta;
+            width: 100%;
+            top: 0;
+        }
+        /* inserting color and style to navigation bar */
+        .navbar a{
+            color: black;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        .navbar .icons{
+            margin-left: 10px;
+            padding: 6px;
+        }
+        .navbar form{
+            display: inline;
+        }
+        .navbar input [type="email"]{
+            padding:5px;
+            margin: 10px;
+        }
+        .section{
+            padding: 100px 100px 100px 100px 100px;
+            margin-top: 50px;
+        }
+        #home{
+            background-image: url(../Image/darkHSEF.webp);
+            background-size: cover;
+            text-align: center;
+            padding: 90px 30px;
+            color: rgb(237, 236, 240);
+        }
+        h1 { 
+            font-size: 40px;
+        }
+        .txvd80-20{
+            background-color: rgba(255, 255, 255, 0.438);
+            color: blue;
+            display: flex;
+            padding: 10px;
+        }
+        .txvd80-20 .text{
+            width: 80%;
+            padding: 20px;
+        }
+        .txvd80-20 .video{
+            width: 20%;
+            padding: 20px;
+        }
+        .service{
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(39, 38, 38, 0.349);
+            color: rgba(253, 250, 250, 0.61);
+        }
+        
+
+      
+    </Style>
+</head>
+
+<body>
+    <!--Create div first inside this dive will be our top navigation panel -->
+    <div Class="navbar">
+        <div class="LOGO">
+            <img src="../Image/LogoEHSTECH.jpg" alt="Company LOGO" style="height: 60px;">
+        </div>
+        <!-- Creating Navigation Panel with anchor so that we can create each page -->
+        <div class="navigation">
+            <a href="#Home">Home</a>
+            <a href="#AboutUs">About Us</a>
+            <a href="#Services">Service</a>
+            <a href="#Login">Login</a>
+            <a href="ContactUs">Contact Us</a>
+        </div>
+        <!-- Creating navivation panel with social media and subscription email requied -->
+        <div class="icons">
+            <form action="Register" method="post" enctype="multipart/form-data">
+                <input type="email" placeholder="Enter Email"> <button>Subscribe</button>
+            </form>
+            <a href="#blog"><img src="../Image/blogger.jpg" alt="EHSTECH Blog Link" style="height: 20px;"></a>
+            <a href="#linkedin"><img src="../Image/linkedin.png" alt="EHSTECH linkedin" style="height: 20px;"></a>
+            <a href="#YouTube"><img src="../Image/youtube.png" alt="EHS TECH Link" style="height: 20px;"></a>
+        </div>
+    </div>
+    <div id="home" class="section home">
+        <h1>HSE-RM TECH! Your Partner In Safety...</h1>
+        <P>Vission & Mission </P>
+        <p>Text Input</p>
+        <div class="txvd80-20">
+            <div class="text">
+                <p>Text Input</p>
+                <p>Text Input</p>
+            </div>
+            <div class="video">
+                <iframe width="100%" height="auto" src="../Image/HSERMCPV.mp4" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div id="AboutUs" class="section aboutus">
+        <h1>About Us</h1>
+        <div class="txvd80-20">
+            <div class="text">
+                <p>Text Input</p>
+                <p>Text Input</p>
+            </div>
+            <div class="video">
+                <iframe width="100%" height="auto" src="../Image/HSERMS.mp4" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div id="service" class="section service">
+        <h1>Service</h1>
+    </div>
+    <div id="login" class="section login">
+        <h1>Login</h1>
+    </div>
+    <div id="Contact" class="section contactus">
+        <h1>Contact</h1>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Company Name. All rights reserved.</p>
+
+    </div>
+</body>
+
+</html>
