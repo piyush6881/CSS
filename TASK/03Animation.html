@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumping Jack</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+    .pp{
+        height: 500px;
+        width: 500px;
+        border: 2px solid black;
+        position: relative;
+        margin: 0 auto;
+               
+    }
+    .jj{
+    
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: blue;
+        color: white;
+        animation: jj linear;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        position: absolute;
+        font-size: 20px;
+        text-align: center;
+        border: 1px solid black;
+        margin-top: 230px;
+    }
+  
+        @keyframes jj {
+            0% {
+                top: 0;
+                left: 0;
+                background-color: chartreuse;
+            } 
+
+            25% {
+                top: 230px;
+                left: 230px;
+                background-color: blueviolet;
+            }
+
+            50% {
+                top: -40px;
+                left: 460px;
+                background-color: crimson;
+    
+            } 
+
+            75% {
+                 top: -230px;
+                 left: 230px;
+                 background-color: rgb(234, 238, 9);
+            }
+
+            100% {
+                top: 0;
+                left: 0;
+                background-color: chartreuse;
+            }
+        }
+
+</style>
+    
+</head>
+<body>
+       <div class="pp">
+            <div class="jj">
+                JJ
+            </div>
+        </div>
+</body>
+</html>
