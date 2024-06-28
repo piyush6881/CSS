@@ -1,0 +1,172 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: orangered; */
+    font-family: arial, serif;
+}
+.container{
+    border: 2px solid black;
+    width: 95%;
+    height: 120vh;
+    background-color: orangered;
+}
+#header{
+    background-color: #303030;
+    background-image: url(../../TASK/PSD/picb/01Banner.png);
+    height: 120vh;
+}
+.nav-bar{
+    background-color: #303030;
+    width: 100%;
+    height: 90px;
+    padding: 5px; 
+    color: white;
+        
+}
+.navmenu{
+    padding: 30px;
+}
+.logo{
+    height: 60px;
+    width: 30%;
+    background-position: center;
+
+}
+.row{
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+}
+
+.header-content{
+    margin-top: 250px;
+    margin-left: 60px;
+    padding: 20px;
+}
+h1{
+    font-size: 100px;
+}
+p{
+    font-size: 20px;
+    padding: 5px;
+    color: white;
+}
+h2{
+    font-size: 60px;
+    color: white;
+}
+.register-btn{
+    padding: 10px 20px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.section-2{
+    padding: 20px;
+    text-align: center;
+}
+
+.section-2-content{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.image-text-box{
+    width: 30%;
+    text-align: center;
+}
+
+.image-text-box img{
+    width: 100%;
+    height: auto;
+}
+.section-3, .section-4 {
+    display: flex;
+}
+.section-3 .left, .section-4 .right {
+    width: 50%;
+}
+
+.section-3 .right, .section-4 .left {
+    width: 50%;
+    padding-top: 40vh;
+    padding-left: 10vh;
+    
+}
+.section-3 .left img, .section-4 .right img{
+    width: 100%;
+    height: 120vh;
+
+}
+.section-btn{
+    padding: 10px 20px;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.section-5 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.section-5 .top, .section-6 .bottom {
+    padding: 20px;
+}
+
+.section-5 .top {
+    text-align: center;
+}
+.section-6 {
+    position: relative;
+}
+.section-6 img{
+    height: 120vh;
+    width: 100%;
+}
+
+.gradient-overlay {
+    position: relative;
+}
+
+.gradient-overlay::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+}
+.section-7 {
+   padding-top: 30vh;
+    text-align: center;
+}
+
+.section-7 form {
+    display: inline-flex;
+    align-items: center;
+}
+
+.section-7 input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.section-7 button {
+    padding: 10px 20px;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
