@@ -2,28 +2,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, serif;
 }
 header{
     background-image: url(../PSDTASK/taskpics/01Banner.png);
-    position: relative;
-    height: 120vh;
     background-color: #303030;
-    
+    margin: 0 auto;
 }
 nav{
     background-color: #303030;
     margin: 0 auto;
-    padding: 10px 60px 10px 60px;
+    padding: 10px 25px 10px 25px;
     align-items: center;
-    justify-content: space-between;
+   
 }
 .row{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .row a {
     padding: 30px;
     color: white;
+    align-items: center;
 }
 .banner{
     color: white;
@@ -42,26 +42,145 @@ h1+p {
     line-height: 25px;
     word-spacing: 26px;    
 }
-.banner button{
-    background-color: orangered;
+button{
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     padding: 10px 20px;
+    font-size: 22px;
+    background-color: #303030;
 }
 .section1{
     text-align: center;
     color: white;
+    margin: 0 auto;    
+    padding: 10px;
+    background-image: url(../PSDTASK/taskpics/ushape.png);
+    background-position: -75% 250%;
+    background-size: 65%;
+    background-repeat: no-repeat;
     background-color: orangered;
-    
 }
 h2{
     font-size: 60px;
+    color: white;
 }
 h2+p {
     font-size: 22px;
-    width: 50%;
+    width: 100%;
     line-height: 25px;
-    word-spacing: 26px;     
+    margin: 0 auto;  
+    padding: 25px; 
+    color: white; 
+}
+h4{
+    font-size: 32px;
+    
+}
+h4+p{
+    line-height: 20px;
+}
+p{
+    font-size: 15px;
+}
+.Col-33{
+    width: 90%;
+    margin: 0 auto;
+    gap: 25px;
+    
+}
+.s1{
+    background-color: #303030;
+    width: 100%;
+    padding: 5px;
+}
+.section2{
+    text-align: center;
+    color: white;
+    margin: 0 auto;    
+    padding: 10px;
+    background-image: url(../PSDTASK/taskpics/dshape.png);
+    background-position: 120% -50%;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-color: #303030;
+}
+.s2{
+    background-color: orangered;
+    width: 100%;
+    padding: 30px;
+    line-height: 100px;
+    border-radius: 10px;
+}
+.col-50{
+    width: 100%;
+}
+.col-50 img{
+    width: 100%;
+}
+.section3, .section4 {
+    text-align: center;
+    color: white;
+    margin: 0 auto;    
+    background-color: orangered;
+    background-image: url(../PSDTASK/taskpics/dshape.png);
+    background-repeat: no-repeat;
+    background-position: 150% 0%;
+    background-size: 65%;
+    overflow: hidden;
+    
+}
+.coltext{
+    padding-top: 300px;  
+}
+.section5{
+    background-color: #303030;
+    text-align: center;
+    background-image: url(../PSDTASK/taskpics/Shape2.png);
+    background-repeat: no-repeat;
+    padding: 90px;
+}
+.s5{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+.col-60{
+    width: 60%;
+    padding: 10px;
+}
+.section6{
+    background-color:orangered;
+    text-align: center;
+    background-image: url(../PSDTASK/taskpics/dshape.png);
+    background-repeat: no-repeat;
+    background-position: 150% 0%;
+    background-size: 65%;
+    overflow: hidden;
+}
+.section6 input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+.s6{
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 50%;
+}
+.section7{
+    background-color: #303030;
+    text-align: center;
+    color: white;
+
+}
+.collist{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: justify;
 }
