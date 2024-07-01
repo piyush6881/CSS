@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: black;
+    padding: 20px;
+    font-size: 15px;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+.row a{
+    text-decoration: none;
+    color: white;
+    text-align: justify; 
+    cursor: pointer;
+}
+.col-50{
+    width: 50%;
+}
+.col-33{
+    width: 33.33%;
+}
+.col-25{
+    width: 25%;
+}
