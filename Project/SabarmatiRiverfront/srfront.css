@@ -1,47 +1,135 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+   margin: 0 auto;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
 }
 header{
     background-color: black;
-    color: white;
-}
-.rowh {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 20px;
-}
-.hrow a {
-    padding: 20px;
-    color: white;
-    align-items: center;
     font-size: 15px;
-    text-decoration: none;
-}
-nav{
-    display: flex;
-    justify-content: space-around;
-    background-color: white;
-    margin: 0 auto;
-    padding: 20px 25px 10px 25px;
-    align-items: center;
 }
 .row{
     display: flex;
-    align-items: center;
-    padding-left: 120px;
-    gap: 20px;    
+    justify-content: space-around;
 }
-a{
+.row a{
+    text-decoration: none;
+    color: white;
+    text-align: justify; 
+    cursor: pointer;
+}
+.gp{
+    padding-right: 160px;
+}
+.ic{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.section1{
+    background-image: url(../SabarmatiRiverfront/pics/riverfrontfootoverbridge.jpg);
+    margin: 0 auto;
+    background-repeat: none;
+    background-size: cover;    
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    align-items: center;
+}
+.lnav{
+    display: flex;
+    justify-content: space-around;
+}
+.lnav a{
     text-decoration: none;
     color: black;
-    font-size: 14px;
+    cursor: pointer;
+    padding: 10px;
+}
+.banner{
+    color: white;
+    padding: 10px;
+    margin-top: 20%;
+}
+h1{
+    font-size: 60px;
+    text-align: center;
+}
+h1+p{
+    font-size: 20px;
+    text-align: center;
+}
+h2{
+    font-size: 40px;
+    color: black;
+    padding: 25px;
+}
+h2+p{
+    text-align: justify;
+    line-height: 30px;
 }
 .Col-33{
-    width: 90%;
+    width: 33.33%;
     margin: 0 auto;
-    gap: 25px;
+    align-items: center;
+}
+.col-33 img{
+    object-fit: contain;
+    width: 100%;
+    padding: 60px;
+}
+h3{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    padding: 20px;
+}
+p {
+    color: rgb(44, 43, 43);
+    font-size: 15px;
+    padding: 20px;
+    text-align: center;
+}
+button{
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #35299e;
+}
+.col-50{
+    width: 50%;
+    padding: 20px;
+    text-align: justify;
+}
+.col-50 img{
+    object-fit: contain;
+    width: 100%;
+    padding: 10px;
+}
+.col-25{
+    width: 25%;
+    padding: 20px;
+}
+.col-25 img{
+    object-fit: contain;
+    width: 100%;
+    padding: 10px 10px 0px 10px;
+  }
+.ptv{
+    background-color: aqua;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+
 }
