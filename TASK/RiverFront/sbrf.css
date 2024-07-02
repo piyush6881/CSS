@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.head{
+    background-color: black;
+}
+.hdscrol{
+    background-image: url(../../Project/SabarmatiRiverfront/pics/atalbridgehome.jpg)no-repeat center center/cover;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+.row a{
+    text-decoration: none;
+    color: white;
+    text-align: justify; 
+    cursor: pointer;
+}
+.gp{
+    padding-right: 160px;
+}
+.ic{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    align-items: center;
+}
+.lnav{
+    display: flex;
+    justify-content: space-around;
+}
+.lnav a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+}
+.banner{
+    color: white;
+    padding: 10px;
+    margin-top: 20%;
