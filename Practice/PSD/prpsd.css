@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.head{
+    background: url(.././../Project/PSDTASK/taskpics/01Banner.png);
+}
+.sr{
+    background-color: #303030;
+}
+.nr1{
+    width: 90%;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+.col-50{
+    width: 50%;
+}
+.col-33{
+    width: 33.33%;
+}
+.banner-text{
+    text-align: justify;
+    color: white;
+    padding: 100px;
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+h1{
+    font-size: 60px;
+    padding: 150px 5px 5px;;
+}
+h1+p {
+    font-size: 22px;
+    padding: 10px;   
+}
+button{
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 22px;
+    background-color: #303030;
+}
+a{
+    text-decoration: None;
+    align-items: center;
+}

@@ -43,7 +43,7 @@ li{
 #section1{
     /* background-color: #e8631c; */
     /* background: url(Image/banner2.png)no-repeat center center/cover; */
-    background-image: url(Image/banner1.png);
+    background-image: url(../../Project/PSDTASK/taskpics/01Banner.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -129,4 +129,30 @@ font-weight: 400;
 font-family: "Oswald";
 padding: 10px 80px;
 margin-bottom: 30px;
+}
+
+
+
+/* col-50 */
+
+.col-50{
+    width: 50%;
+}
+.main-text{
+    padding: 100px 0px ;
+    margin-top: 100px;
+}
+h1{
+    font-size: 70px;
+    color: #ffffff;
+    margin-top: 100px;
+}
+h1+p{
+    font-size: 30px;
+    color: #ffffff;
+    padding: 20px 0px;
+}
+.col-50 button{
+    background-color: #e8631c;
+    margin-top: 30px;
 }
