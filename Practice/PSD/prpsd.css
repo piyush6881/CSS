@@ -5,6 +5,7 @@
 }
 .head{
     background: url(.././../Project/PSDTASK/taskpics/01Banner.png);
+    margin: 0 auto;
 }
 .sr{
     background-color: #303030;
@@ -15,7 +16,8 @@
 }
 .row{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 }
 .col-50{
     width: 50%;
@@ -24,19 +26,17 @@
     width: 33.33%;
 }
 .banner-text{
-    text-align: justify;
+    padding: 100px 0px;
+    margin-top: 50px;
     color: white;
-    padding: 100px;
-    padding-top: 120px;
-    padding-bottom: 50px;
 }
 h1{
-    font-size: 60px;
-    padding: 150px 5px 5px;;
+    font-size: 70px;
+    padding-top: 100px;
 }
 h1+p {
     font-size: 22px;
-    padding: 10px;   
+    padding: 20px 0px;
 }
 button{
     color: white;
@@ -49,5 +49,10 @@ button{
 }
 a{
     text-decoration: None;
-    align-items: center;
+    color: white;
+}
+.input{
+    padding: 20px;
+    list-style: none;
+    gap: 60px;
 }

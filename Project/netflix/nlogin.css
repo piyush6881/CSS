@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.head{
+    background: url(../netflix/npics/b1.jpg) no-repeat center center/cover;
+}
+.container{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+.logo{
+    width: 80%;
+    text-align: justify;
+}
+.logo img{
+    /* width: 9.25rem;
+    height: 2.5rem;
+    color: rgb(229, 9, 20);
+    fill: currentColor;
+    display: block; */
+    width: 200px;
+}
+.boxlogin{
+    width: 33.33%;
+    margin: 0 auto;
+}
+.login-box {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 60px 68px 40px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin-bottom: 28px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.input-group {
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #e50914;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 24px;
+}
+
+.btn:hover {
+    background-color: #f6121d;
+}
+
+.remember-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.remember-me a {
+    color: #b3b3b3;
+    font-size: 13px;
+}
+
+.signup-now {
+    margin-top: 16px;
+}
+
+.signup-now a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.signup-now a:hover {
+    text-decoration: underline;
+}
+
+.more-info {
+    margin-top: 24px;
+    font-size: 13px;
+    color: #8c8c8c;
+}
+
+.more-info a {
+    color: #0071eb;
+    text-decoration: none;
+}
+
+.more-info a:hover {
+    text-decoration: underline;
+}
