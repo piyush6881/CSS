@@ -62,7 +62,7 @@
     margin-top: 100px;
 }
 h1{
-    font-size: 48px;
+    font-size: 46px;
     color: white;
     margin-bottom: 20px;
 }
@@ -120,6 +120,10 @@ hr{
 .tv-frame, .mobile-frame {
     max-width: 100%;
     display: block;
+}
+.tv-frame{
+    position: relative;
+    z-index: 5;
 }
 
 .tv-screen {
@@ -194,7 +198,7 @@ hr{
 
 .faq-section h1 {
     text-align: center;
-    font-size: 48px;
+    font-size: 46px;
     margin-bottom: 30px;
 }
 
@@ -305,3 +309,53 @@ hr{
     padding: 48px 48px;
     background-color: black;
 }
+.rowd{
+    display: flex;
+    justify-content: space-between;
+    
+}
+@media (max-width: 576px) {
+    .row{
+      display: flex;
+      flex-direction: column;
+    }
+    .rowd{
+        display: flex;
+      flex-direction: column;
+    }
+    }
+  
+    /* // Medium devices (tablets, 768px and up) */
+    @media (max-width: 768px) {
+        .row{
+            display: flex;
+            flex-direction: column;
+          }
+          .rowd{
+            display: flex;
+          flex-direction: column;
+        }
+    }
+  
+    /* // Large devices (desktops, 992px and up) */
+    @media (max-width: 992px) {
+        .row{
+            display: flex;
+            flex-direction: column;
+          }
+          .rowd{
+            display: flex;
+          flex-direction: column;
+        }
+          
+    }
+  
+    /* // X-Large devices (large desktops, 1200px and up) */
+    @media (max-width: 1200px) {
+      
+    }
+  
+    /* // XX-Large devices (larger desktops, 1400px and up) */
+    @media (max-width: 1400px) {
+     
+    }

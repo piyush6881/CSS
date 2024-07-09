@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyBag</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .nav {
+            width: 80%;
+            background-color: black;
+            margin: 0 auto;
+            height: 20px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .col-25 {
+            width: 25%;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .show:hover .hide {
+            display: flex;
+            justify-content: space-between;
+            /* flex-direction: column; */
+            background-color: red;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="nav">
+                <nav class="row">
+                    <div class="col-25"><a href="#home">HOME</a></div>
+                    <div class="col-25"><a href="#aboutus">ABOUT US</a></div>
+                    <div class="col-25">
+                        <div class="show"><a href="#product">PRODUCT</a>
+                            <div class="hide">
+                                <div>
+                                    <div>1</div>
+                                    <div>2</div>
+                                    <div>3</div>
+                                    <div>4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-25"><a href="#aboutus">CONTACT US</a></div>
+
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+</body>
+
+</html>
