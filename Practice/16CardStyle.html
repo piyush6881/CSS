@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .cube-center {
+            margin: 0 auto;
+            width: 80%;
+        }
+
+        hr {
+            border: 5px solid gray;
+        }
+
+        .cube-container {
+            width: 200px;
+            height: 200px;
+            perspective: 800px;
+            margin: 50px auto;
+        }
+
+        .cube {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            animation: rotate 15s infinite linear;
+        }
+
+        .face {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            color: rgb(21, 153, 214);
+            font-size: 18px;
+            text-align: center;      
+            background: transparent;
+            opacity: 0.9;
+            border: 2px solid;
+            border-image: linear-gradient(90deg,
+                    rgba(14, 8, 110, 1) 0%,
+                    rgba(15, 15, 167, 1) 26%,
+                    rgba(20, 45, 255, 1) 85%);
+            box-shadow: 0 0 100px rgba(8, 178, 245, 0.61);
+        }
+
+        .front {
+            transform: translateZ(100px);
+            background-color: #0093e9;
+            background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+        }
+
+        .back {
+            transform: rotateY(180deg) translateZ(100px);
+            background-color: #0093e9;
+            background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+        }
+
+        .right {
+            transform: rotateY(90deg) translateZ(100px);
+            background-color: #0093e9;
+            background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+        }
+
+        .left {
+            transform: rotateY(-90deg) translateZ(100px);
+            background-color: #0093e9;
+            background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+        }
+
+        .top {
+            transform: rotateX(90deg) translateZ(100px);
+            background-color: #0093e9;
+            background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+        }
+
+        .bottom {
+            transform: rotateX(-90deg) translateZ(100px);
+            background-color: #0093e9;
+            background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+        }
+
+        .cube-container:hover .cube {
+            animation-play-state: paused;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotateX(0) rotateY(0) rotateZ(0);
+            }
+
+            100% {
+                transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+            }
+        }
+        .card-container{
+            width: 80%;
+            display: flex;
+            justify-content: center;
+        }
+        .col-25{
+            width: 25%;
+        }
+        .card{
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header section starts here -->
+    <header>
+        <h1>Introduction</h1>
+        <!-- creating a break between graphic  -->
+        <hr>
+        <div class="cube-center">
+            <!-- 3d Cube over  -->
+            <div class="cube-container">
+                <div class="cube">
+                    <div class="face front"></div>
+                    <div class="face back"></div>
+                    <div class="face right"></div>
+                    <div class="face left"></div>
+                    <div class="face top"></div>
+                    <div class="face bottom"></div>
+                </div>
+            </div>
+        </div>
+        <!-- creating a break between graphic  -->
+        <hr>
+        <!-- card container 4 cards col-25 -->
+         <div class="card-container">
+            <div class="col-25">
+                <div class="card">
+                    
+                </div>
+            </div>
+            
+
+         </div>
+
+    </header>
+</body>
+
+</html>
