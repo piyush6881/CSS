@@ -22,7 +22,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 20px;
 }
 .text a{
   font-size: 20px;
@@ -347,6 +347,7 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px;
 }
 .col25{
   width: 25%;
@@ -396,6 +397,7 @@ hr {
     .row{
       display: flex;
       flex-direction: column;
+      padding: 20px;
     }
     .split {
       display: flex;
@@ -406,6 +408,7 @@ hr {
     .rowd{
         display: flex;
       flex-direction: column;
+      padding: 20px;
     }
     .fix2{
         display: hide;
@@ -423,10 +426,12 @@ hr {
         .row{
             display: flex;
             flex-direction: column;
+            padding: 20px;
           }
           .rowd{
             display: flex;
           flex-direction: column;
+          padding: 20px;
         }
         .fix2{
             display: none;
@@ -450,10 +455,12 @@ hr {
         .row{
             display: flex;
             flex-direction: column;
+            padding: 20px;
           }
           .rowd{
             display: flex;
           flex-direction: column;
+          padding: 20px;
         }
         .fix2{
             display: none;
@@ -477,10 +484,12 @@ hr {
         .row{
             display: flex;
             flex-direction: column;
+            padding: 20px;
           }
           .rowd{
             display: flex;
           flex-direction: column;
+          padding: 20px;
         }
         .fix2{
             display: none;
