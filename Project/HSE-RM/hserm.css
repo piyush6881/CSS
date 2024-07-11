@@ -125,7 +125,7 @@ button:hover {
 hr {
     border: 5px solid gold;
 }
-
+/* 3d cube creation width and ht to container */
 .cube-container {
     width: 200px;
     height: 200px;
@@ -156,31 +156,31 @@ hr {
             rgba(20, 45, 255, 1) 85%);
     box-shadow: 0 0 100px rgba(8, 178, 245, 0.61);
 }
-
+/* Front face 100px in 2d */
 .front {
     transform: translateZ(100px);
     background-color: #0093e9;
     background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
 }
-
+/* back face will rotate on y axis by 180 degree. and size will be same. 100px */
 .back {
     transform: rotateY(180deg) translateZ(100px);
     background-color: #0093e9;
     background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
 }
-
+/* repeate same as front but on right it will be 90 degree */
 .right {
     transform: rotateY(90deg) translateZ(100px);
     background-color: #0093e9;
     background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
 }
-
+/* on left it will be on left side so -90 degree */
 .left {
     transform: rotateY(-90deg) translateZ(100px);
     background-color: #0093e9;
     background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
 }
-
+/* same for top and bottom */
 .top {
     transform: rotateX(90deg) translateZ(100px);
     background-color: #0093e9;
@@ -192,9 +192,20 @@ hr {
     background-color: #0093e9;
     background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
 }
-
+/* animate pause on hover */
 .cube-container:hover .cube {
     animation-play-state: paused;
+}
+
+/* for rotate 0 and 360 rotate */
+@keyframes rotate {
+  0% {
+      transform: rotateX(0) rotateY(0) rotateZ(0);
+  }
+
+  100% {
+      transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
 }
 /* For About Us Section */
 .col50{
@@ -211,6 +222,8 @@ hr {
     margin: 0 auto;
     padding: 20px;
 }
+/* grid layout module excels at dividing a page into major regions or defining the relationship in terms of size 
+creating table by css*/
 .infographic-wrapper{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -218,6 +231,7 @@ hr {
   gap: 10px;
 
 }
+/* hover transform property pulls it up or out on z axis */
 .infographic-items:hover{
   transform: scale(1.1);
 }
@@ -233,6 +247,7 @@ hr {
 .infographic-items h3{
   text-transform: uppercase;
 }
+/* var color takes from parent infographic-items */
 .infographic-items h2{
   color:var(--color-accent);
   background: var(--color-main);
@@ -379,19 +394,6 @@ hr {
 }
 
 
-
-
-@keyframes rotate {
-    0% {
-        transform: rotateX(0) rotateY(0) rotateZ(0);
-    }
-
-    100% {
-        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
-    }
-}
-
-
 /* Responsive applied only to row.  */
   @media (max-width: 576px) {
     .row{
@@ -403,6 +405,10 @@ hr {
       display: flex;
       flex-direction: column;
       background: linear-gradient(to right, #1111112f, #320fcf50);
+      padding: 20px;
+    }
+    .split .text {
+      width: 80%;
       padding: 20px;
     }
     .rowd{
@@ -442,6 +448,10 @@ hr {
           background: linear-gradient(to right, #1111112f, #320fcf50);
           padding: 20px;
         }
+        .split .text {
+          width: 80%;
+          padding: 20px;
+        }
         .col25{
           width: 80%;
         }
@@ -469,6 +479,10 @@ hr {
           display: flex;
           flex-direction: column;
           background: linear-gradient(to right, #1111112f, #320fcf50);
+          padding: 20px;
+        }
+        .split .text {
+          width: 80%;
           padding: 20px;
         }
         .col25{
