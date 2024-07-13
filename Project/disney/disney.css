@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* with * we applied univeral  */
 .container {
     padding: 20px;
 }
@@ -11,7 +11,7 @@
 .logo {
     width: 100px;
 }
-
+/* hover for nav to display drop down menu */
 .hide {
     display: none;
 }
@@ -44,14 +44,14 @@ a {
     color: black;
     font-weight: 600;
 }
-
+/* content display in row, with gap  */
 .row {
     display: flex;
     justify-content: start;
     align-items: center;
     gap: 30px;
 }
-/* Slider banner input  */
+/* Slider banner input for media differnt size to be given. */
 .slider{
     width: 100%;
     height: 600px;
@@ -145,7 +145,7 @@ h2{
 .frame iframe.display {
     width: 100%;
     height: 360px; /* Adjust height as needed */
-    border: none;
+    border: none; 
 }
 .content {
     margin-top: 10px;
