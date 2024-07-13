@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.hide {
+    display: none;
+}
+.show{
+    padding: 10px;
+}
+.hide a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    }
+
+.show:hover .hide {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    padding: 20px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.row {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+}
+/* Slider banner input  */
+.slider{
+    width: 100%;
+    height: 600px;
+}
+.banner{
+    background: no-repeat center center/cover;
+    animation-name: banner;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+@keyframes banner {
+    0%{
+        background-image: url(../disney/grafics/b1.jpeg);
+    }
+    16%{
+        background-image: url(../disney/grafics/b2.jpeg) ;
+    }
+    32%{
+        background-image:  url(../disney/grafics/b3.jfif);
+    }
+    47%{
+        background-image:  url(../disney/grafics/b4.jfif);
+    }
+    62%{
+        background-image: url(../disney/grafics/b3.jpg) ;
+    }
+    77%{
+        background-image: url(../disney/grafics/b2.jpeg);
+             }
+    100%{
+        background-image: url(../disney/grafics/b1.jpeg) ;
+    }
+}
+/*  Banner slider over */
+
+/* shopping 4 part section */
+.container1{
+    padding: 20px 0px;
+}
+.col25{
+    width: 25%;
+    padding: 10px;
+}
+.colimg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.colimg:hover {
+    transform: scale(1.1);
+   
+}
+.coltext{
+    position: relative;
+    
+}
+.text{
+    position: absolute;
+    bottom: 10%;
+    color: white;
+    left: 20%;
+}
+button{
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+}
+
+/* section 3  2 part*/
+.container3{
+    width: 90%;
+    margin: 0 auto;
+}
+.frame  {
+    width: 100%;
+}
+.col50{
+    width: 50%;
+}
+h2{
+    font-size: 36px;
+}
+.col50text{
+    padding: 20px;
+}
+h3{
+    font-size: 24px;
+    text-align: justify;
+}
+p{
+    font-size: 15px;
+    text-align: justify;
+}
+
+
+
+
+
+/* Media Quaries for responsive */
+/* // Small devices (landscape phones, 576px and up) */
+@media  (max-width: 576px) { 
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .col25{
+        width: 50%;
+        padding: 10px;
+    }
+    .slider{
+        width: 100%;
+        height: 300px;
+    }
+}
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .col25{
+        width: 50%;
+        padding: 10px;
+    }
+    .slider{
+        width: 100%;
+        height: 300px;
+    }
+    }
+
+    
+
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .col25{
+        width: 50%;
+        padding: 10px;
+    }
+    .slider{
+        width: 100%;
+        height: 300px;
+    }
+    }
+
+@media (max-width: 1290px) {
+    .frame{
+        width: 100%;
+    }
+}
