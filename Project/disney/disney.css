@@ -85,6 +85,7 @@ a {
         background-image: url(../disney/grafics/b1.jpeg) ;
     }
 }
+
 /*  Banner slider over */
 
 /* shopping 4 part section */
@@ -101,8 +102,9 @@ a {
     object-fit: cover;
 }
 .colimg:hover {
-    transform: scale(1.1);
-   
+    transform: scale(1.07);
+    transition: 2s;
+
 }
 .coltext{
     position: relative;
@@ -257,6 +259,7 @@ h2{
     .col-50{
         width: 100%;
     }
+
 }
 /* // Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) { 
