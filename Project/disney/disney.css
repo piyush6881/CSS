@@ -159,19 +159,19 @@ h2{
     font-size: 24px;
     margin-bottom: 5px;
 }
-.content p {
-    margin: 0;
+.content img{
+    max-width: 100%;
+    height: auto;
 }
 .image-wrapper {
     text-align: center;
 }
-.image-wrapper p {
-    padding-top: 60px;
-}
-
 .image-wrapper img {
     max-width: 100%;
     height: auto;
+}
+.image-wrapper p{
+    padding-top: 60px;
 }
 /* section 4 3 part with col30 */
 .col30{
@@ -254,7 +254,7 @@ h2{
     .frame  {
         width: 100%;
     }
-    .col50{
+    .col-50{
         width: 100%;
     }
 }
@@ -301,7 +301,7 @@ h2{
     .frame  {
         width: 100%;
     }
-    .col50{
+    .col-50{
         width: 100%;
     }
     }
@@ -336,7 +336,7 @@ h2{
     .frame  {
         width: 100%;
     }
-    .col50{
+    .col-50{
         width: 100%;
     }
     }
@@ -348,8 +348,6 @@ h2{
     .frame  {
         width: 100%;
     }
-    .col50{
-        width: 100%;
-    }
+   
     
 }
