@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* the container where card will be placed */
+.crcontainer {
+    width: 90%;
+    padding: 40px 0;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+    /* only gap given justification of content not given */
+}
+/* card in col30  */
+.col30 {
+    border-radius: 25px;
+    width: 33.33%;
+    border: 1px solid red;
+}
+/* card is created inside col30 to give shape */
+.card {
+    border-radius: 25px;
+    background-color: #FFF;
+}
+/* image content and text as card content are 2 sections of card */
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.image-content {
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+
+.bluepatch {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    border-radius: 25px 25px 0 25px;
+    /* border radius to 3 side given */
+}
+/* patch that gives shape for curve. both psudo is must before after  */
+.bluepatch::before,
+.bluepatch::after {
+    /* blank content created to form a patch */
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(0, 255, 255);
+}
+/* border radious to after span as final  */
+.bluepatch::after {
+    /* only right top given border radius shape given color white */
+    border-radius: 0 25px 0 0;
+    background-color: #FFF;
+}
+
+.ringimage {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #FFF;
+    padding: 3px;
+}
+/* ring and card same properties.  */
+.ringimage .card-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid blue;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.description {
+    font-size: 15px;
+    color: #707070;
+    text-align: center;
+}
+
+.button {
+    border: none;
+    font-size: 15px;
+    color: #FFF;
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 255);
+    border-radius: 5px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: rgb(0, 238, 255);
+}
