@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    padding: 20px;
+   
+}
+.col33{
+    width: 33.33%;
+    margin: 0 auto;
+}
+
+.cconimg,
+.ccontext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    height: 50vh;
+}
+.cconimg{
+    background-color: blue;
+    border-radius: 25px 25px 0px 25px;
+}
+.ccontext{
+    background-color: white;
+    border-radius: 0px 25px 25px 25px;
+}
+.pcontext{
+    background-color: blue;
+    border-radius: 25px 0px 25px 25px;
+
+}
+.img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}

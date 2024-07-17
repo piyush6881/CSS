@@ -5,139 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card 15-07-2024</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        .crcontainer {
-            max-width: 1120px;
-            width: 100%;
-            padding: 40px 0;
-            margin: 0 auto;
-        }
-
-        .col30 {
-            margin: 0 40px;
-            overflow: hidden;
-            border-radius: 25px;
-            width: 33.33%;
-            margin: 0 auto;
-            border: 1px solid red;
-        }
-
-        .card {
-            border-radius: 25px;
-            background-color: #FFF;
-        }
-
-        .image-content,
-        .card-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 10px 14px;
-        }
-
-        .image-content {
-            position: relative;
-            row-gap: 5px;
-            padding: 25px 0;
-        }
-
-        .bluepatch {
-            position: absolute;
-            left: 0;
-            top: 0;
-            height: 100%;
-            width: 100%;
-            background-color: blue;
-            border-radius: 25px 25px 0 25px;
-        }
-/* patch that gives shape for curve.  */
-        .bluepatch::before,
-        .bluepatch::after {
-            content: '';
-            position: absolute;
-            right: 0;
-            bottom: -40px;
-            height: 40px;
-            width: 40px;
-            background-color: blue;
-        }
-
-        .bluepatch::after {
-            border-radius: 0 25px 0 0;
-            background-color: #FFF;
-        }
-
-        .ringimage {
-            position: relative;
-            height: 150px;
-            width: 150px;
-            border-radius: 50%;
-            background: #FFF;
-            padding: 3px;
-        }
-
-        .ringimage .card-img {
-            height: 100%;
-            width: 100%;
-            border-radius: 50%;
-            border: 2px solid blue;
-        }
-
-        .name {
-            font-size: 18px;
-            font-weight: 500;
-            color: #333;
-        }
-
-        .description {
-            font-size: 14px;
-            color: #707070;
-            text-align: center;
-        }
-
-        .button {
-            border: none;
-            font-size: 16px;
-            color: #FFF;
-            padding: 8px 16px;
-            background-color: rgb(0, 0, 255);
-            border-radius: 6px;
-            margin: 14px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .button:hover {
-            background: rgb(0, 238, 255);
-        }
-
-    </style>
+    <link rel="stylesheet" href="04card.css">
+    
 </head>
 
 <body>
-    <div class="crcontainer swiper">
+    <div class="crcontainer">
         <div class="col30">
             <div class="card-wrapper">
                 <div class="card">
                     <div class="image-content">
-                        <!-- this is what gives shape pan the patch -->
-                        <span class="bluepatch"></span>
+                        <div class="child">                     
                         <div class="ringimage">
                             <img src="../Image/piyush.jpg" alt="" class="card-img">
                         </div>
                     </div>
+                    </div>
                     <div class="card-content">
+                    <div class="textcontent">
                         <h2 class="name">Piyush</h2>
                         <p class="description">The lorem text the section that contains header with having open
                             functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
                         <button class="button">View More</button>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
