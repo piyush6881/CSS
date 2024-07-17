@@ -79,15 +79,20 @@ p{
 .maintext form {
     display: flex;
     justify-content: center;
+    
 }
 .maintext input[type="email"] {
     padding: 10px;
     font-size: 15px;
-    border: none;
+    border: 1px solid white;
     border-radius: 2px;
     margin-right: 10px;
     width: 300px;
+    background: transparent;
 }
+.maintext input::placeholder {
+    color: white;
+  }
 .maintext button {
     padding: 10px 20px;
     font-size: 20px;
@@ -246,6 +251,7 @@ hr{
 .faq-item input:checked ~ .faq-answer {
     max-height: 200px; /* Adjust as necessary */
     padding: 15px;
+
 }
 
 .faq-answer p {
