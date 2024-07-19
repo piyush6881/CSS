@@ -3,169 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-      <!-- step 1 is to import or connect the external link link cdn  then input images by search and paste link.-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-      
+    <title>Image Color Changer</title>
     <style>
-       
-
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
-*{
-  margin:0px;
-  padding:0px;
-  box-sizing: border-box;
-}
-:root{
-  --color-text: #616161;
-  --color-text-btn: #ffffff;
-  --card1-gradient-color1: #f12711;
-  --card1-gradient-color2: #f5af19;
-  --card2-gradient-color1: #7F00FF;
-  --card2-gradient-color2: #E100FF;
-  --card3-gradient-color1: #3f2b96;
-  --card3-gradient-color2: #a8c0ff;
-  --card4-gradient-color1: #11998e;
-  --card4-gradient-color2: #38ef7d;
-}
-body{
-  font-family: 'Roboto', sans-serif;
-  background: linear-gradient(to right, #8e9eab, #eef2f3); 
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-.card-wrap{
-  width: 220px;
-  background: #fff;
-  border-radius: 20px;
-  border: 5px solid #fff;
-  overflow: hidden;
-  color: var(--color-text);
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
-              rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  cursor: pointer;
-  transition: all .2s ease-in-out;
-}
-.card-wrap:hover{
-  transform: scale(1.1);
-}
-.card-header{
-  height: 200px;
-  width: 100%;
-  background: red;
-  border-radius:100% 0% 100% 0% / 0% 50% 50% 100%;
-  display: grid;
-  place-items: center;
-
-}
-
-.card-header i{
-  color: #fff;
-  font-size: 72px;
-}
-.card-content{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 60%;
-  margin: 0 auto;
-}
-.card-title{
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 16px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  
-}
-.card-text{
-  text-align: center;
-  font-size: 12px;
-  margin-bottom: 20px;
-}
-.card-btn{
-  border: none;
-  border-radius: 100px;
-  padding: 5px 30px;
-  color: #fff;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-}
-.card-header.one{
-  background: linear-gradient(to bottom left, var(--card1-gradient-color1), var(--card1-gradient-color2));
-}
-.card-header.two{
-  background: linear-gradient(to bottom left, var(--card2-gradient-color1), var(--card2-gradient-color2));
-}
-.card-header.three{
-  background: linear-gradient(to bottom left, var(--card3-gradient-color1), var(--card3-gradient-color2));
-}
-.card-header.four{
-  background: linear-gradient(to bottom left, var(--card4-gradient-color1), var(--card4-gradient-color2));
-}
-
-.card-btn.one{
-  background: linear-gradient(to left, var(--card1-gradient-color1), var(--card1-gradient-color2));
-}
-.card-btn.two{
-  background: linear-gradient(to left, var(--card2-gradient-color1), var(--card2-gradient-color2));
-}
-.card-btn.three{
-  background: linear-gradient(to left, var(--card3-gradient-color1), var(--card3-gradient-color2));
-}
-.card-btn.four{
-  background: linear-gradient(to left, var(--card4-gradient-color1), var(--card4-gradient-color2));
-}
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            flex-direction: column;
+        }
+        .container {
+            text-align: center;
+        }
+        .image-container {
+            margin-bottom: 20px;
+            position: relative;
+            width: 200px;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .image-container input[type="radio"] {
+            display: none;
+        }
+        .image-container input[type="radio"]:checked + img {
+            display: block;
+        }
+        .button-container {
+            margin-bottom: 30px;
+        }
+        .color-button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .color-button.red { background-color: red; color: white; }
+        .color-button.green { background-color: green; color: white; }
+        .color-button.blue { background-color: blue; color: white; }
     </style>
 </head>
 <body>
-    <div class="card-wrap">
-        <div class="card-header one">
-          <i class="fas fa-code"></i>
+
+<div class="container">
+    <div class="image-container">
+        <input type="radio" name="image1" id="image1-red" checked>
+        <img src="../Project/furnitureshop/furnitureshopimg/fp01black.jpg" alt="Image 1 Red" id="image1-red-img">
+
+        <input type="radio" name="image1" id="image1-green">
+        <img src="../Project/furnitureshop/furnitureshopimg/fp01brown.jpg" alt="Image 1 Green" id="image1-green-img">
+
+        <input type="radio" name="image1" id="image1-blue">
+        <img src="../Project/furnitureshop/furnitureshopimg/fp01light.jpg" alt="Image 1 Blue" id="image1-blue-img">
+
+        <div class="button-container">
+            <label class="color-button red" for="image1-red">Red</label>
+            <label class="color-button green" for="image1-green">Green</label>
+            <label class="color-button blue" for="image1-blue">Blue</label>
         </div>
-        <div class="card-content">
-          <h1 class="card-title">Title</h1>
-          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          <button class="card-btn one">code</button>
-       </div>
-      </div>
-      <div class="card-wrap">
-        <div class="card-header two">
-          <i class="fab fa-css3-alt"></i>
+    </div>
+    <div class="image-container">
+        <input type="radio" name="image2" id="image2-red" checked>
+        <img src="../Project/furnitureshop/furnitureshopimg/fp02black.jpg" alt="Image 2 Red" id="image2-red-img">
+
+        <input type="radio" name="image2" id="image2-green">
+        <img src="../Project/furnitureshop/furnitureshopimg/fp02brown.jpg" alt="Image 2 Green" id="image2-green-img">
+
+        <input type="radio" name="image2" id="image2-blue">
+        <img src="../Project/furnitureshop/furnitureshopimg/fp02light.jpg" alt="Image 2 Blue" id="image2-blue-img">
+
+        <div class="button-container">
+            <label class="color-button red" for="image2-red">Red</label>
+            <label class="color-button green" for="image2-green">Green</label>
+            <label class="color-button blue" for="image2-blue">Blue</label>
         </div>
-        <div class="card-content">
-          <h1 class="card-title">Title</h1>
-          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          <button class="card-btn two">css3</button>
-       </div>
-      </div>
-      <div class="card-wrap">
-        <div class="card-header three">
-          <i class="fab fa-html5"></i>
+    </div>
+    <div class="image-container">
+        <input type="radio" name="image3" id="image3-red" checked>
+        <img src="../Project/furnitureshop/furnitureshopimg/fp03black.jpg" alt="Image 3 Red" id="image3-red-img">
+
+        <input type="radio" name="image3" id="image3-green">
+        <img src="../Project/furnitureshop/furnitureshopimg/fp03brown.jpg" alt="Image 3 Green" id="image3-green-img">
+
+        <input type="radio" name="image3" id="image3-blue">
+        <img src="../Project/furnitureshop/furnitureshopimg/fp03light.jpg" alt="Image 3 Blue" id="image3-blue-img">
+
+        <div class="button-container">
+            <label class="color-button red" for="image3-red">Red</label>
+            <label class="color-button green" for="image3-green">Green</label>
+            <label class="color-button blue" for="image3-blue">Blue</label>
         </div>
-        <div class="card-content">
-          <h1 class="card-title">Title</h1>
-          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          <button class="card-btn three">html5</button>
-       </div>
-      </div>
-      <div class="card-wrap">
-        <div class="card-header four">
-          <i class="fab fa-js-square"></i>
-        </div>
-        <div class="card-content">
-          <h1 class="card-title">Title</h1>
-          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          <button class="card-btn four">js</button>
-       </div>
-      </div>
-      
-      
+    </div>
+</div>
+
 </body>
 </html>

@@ -286,6 +286,7 @@ h3 {
 }
 
 
+
 /* 80-20 section */
 
 .col80 {
@@ -295,9 +296,11 @@ h3 {
 
 .col20 {
     width: 40%;
-    padding: 30px;
+    padding: 40px;
 }
-
+.col20cont {
+    line-height: 50px;
+}
 .text80 {
     position: relative;
     width: 100%;
@@ -319,9 +322,30 @@ h3 {
 }
 
 .text80img {
-    width: 120%;
+    width: 140%;
     overflow: hidden;
+    position: inherit;
+    left: -150px;
 }
+/* For text col30 section */
+.textstar{
+    color: gold;
+}
+.text30a{
+    color: black;
+    width: 100%;
+    padding: 10px;
+    margin: 0 0 20px;
+    text-align: center;
+    line-height: 30px;
+    align-items: center;
+
+}
+.text30a h4 {
+    font-size: 19px;
+}
+
+
 /* media quarry for size */
 @media (max-width:922px) {
 
