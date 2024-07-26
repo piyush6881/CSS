@@ -6,11 +6,13 @@
     <title>Q7</title>
 </head>
 <style>
+    /* start by margin padding border box for cler slate */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* navbar class given flex property by giving width 90% and aligning item in center padding 5px gives paddding all four sidex  */
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -19,32 +21,36 @@
     margin: 0 auto;
     padding: 5px;
 }
+/* Hover over show hover1 it will keep it fix. by its position given relative it will fix the parent and child will be absolute */
 .show{
     position: relative;
 }
+/* hide will not hide the drop down. with position absolute only on hover it will be displayed by display block property */
 .hide {
     display: none;
     position: absolute;
     background-color: aqua;
 }
+/* hover over show class it will display hide class */
 .show:hover .hide{
     display: block;
 }
+/* hover over hover 2 slide is give relative property for keeping it fix and hide2 will be displayed. */
 .slide{
     position: relative;
 }
 .slide:hover .hide2{
     display: block
 }
+/* position is given to display content on right side when we hover based on size of content px will change */
 .hide2{
     display: none;
     position: absolute;
-}
-.hide2{
     top: 0;
     left: 90px;
     background-color: peachpuff;
 }
+/* as we used anchor tag we have to remove text decoration removing underline font size weight and font family given along with color */
 a{
    text-decoration: none;
     font-size: 20px;
@@ -56,11 +62,14 @@ a{
 
 </style>
 <body>
+    <!-- navbar class given display flex property will display has horizontal nav bar -->
     <nav class="navbar">
             <div><a href="#home">HOME</a></div>
-            <div><a href="#home">HOME</a></div>
+            <div><a href="#home">Text</a></div>
+            <!-- class given to hover as show and hide when hover hide will display -->
             <div class="show"><a href="#home">Hover1</a>
                 <div class="hide">
+                    <!-- next hover over slide and slide menu will appear -->
                     <div class="slide"><a href="#test">Hover2</a>
                         <div class="hide2">
                             <a href="#test">TEXT2</a>
@@ -75,8 +84,8 @@ a{
                 </div>
                 
             </div>
-            <div><a href="#home">HOME</a></div>
-            <div><a href="#home">HOME</a></div>
+            <div><a href="#home">Text</a></div>
+            <div><a href="#home">Text</a></div>
       
     </nav>
 </body>
