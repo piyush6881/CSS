@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q7</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px;
+}
+.show{
+    position: relative;
+}
+.hide {
+    display: none;
+    position: absolute;
+    background-color: aqua;
+}
+.show:hover .hide{
+    display: block;
+}
+.slide{
+    position: relative;
+}
+.slide:hover .hide2{
+    display: block
+}
+.hide2{
+    display: none;
+    position: absolute;
+}
+.hide2{
+    top: 0;
+    left: 90px;
+    background-color: peachpuff;
+}
+a{
+   text-decoration: none;
+    font-size: 20px;
+    color: blueviolet;
+    Text-transform : uppercase;
+    font-family: 'Lucida Sans';
+    font-weight: 800;
+}
+
+</style>
+<body>
+    <nav class="navbar">
+            <div><a href="#home">HOME</a></div>
+            <div><a href="#home">HOME</a></div>
+            <div class="show"><a href="#home">Hover1</a>
+                <div class="hide">
+                    <div class="slide"><a href="#test">Hover2</a>
+                        <div class="hide2">
+                            <a href="#test">TEXT2</a>
+                            <a href="#test">TEXT2</a>
+                            <a href="#test">TEXT2</a>
+                        </div>
+                        
+                    </div>
+                    <div><a href="#test">TEXT1</a></div>
+                    <div><a href="#test">TEXT1</a></div>
+                   
+                </div>
+                
+            </div>
+            <div><a href="#home">HOME</a></div>
+            <div><a href="#home">HOME</a></div>
+      
+    </nav>
+</body>
+</html>

@@ -297,6 +297,8 @@ h3 {
 .col80 {
     width: 80%;
     padding: 10px;
+    /* background:  linear-gradient(rgb(119, 117, 117) rgb(163, 161, 161);
+    height: 600px; */
 }
 
 .col20 {
@@ -408,6 +410,10 @@ h3 {
     .hide {
         display: block;
         padding: 10px;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
     }
 
 }
