@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Q7</title>
 </head>
+<!-- CDN LINK for fontawesom -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <style>
     /* start by margin padding border box for cler slate */
 *{
@@ -38,6 +43,7 @@
 /* hover over hover 2 slide is give relative property for keeping it fix and hide2 will be displayed. */
 .slide{
     position: relative;
+    min-width: 110px;
 }
 .slide:hover .hide2{
     display: block
@@ -47,7 +53,7 @@
     display: none;
     position: absolute;
     top: 0;
-    left: 90px;
+    left: 110px;
     background-color: peachpuff;
 }
 /* as we used anchor tag we have to remove text decoration removing underline font size weight and font family given along with color */
@@ -67,10 +73,10 @@ a{
             <div><a href="#home">HOME</a></div>
             <div><a href="#home">Text</a></div>
             <!-- class given to hover as show and hide when hover hide will display -->
-            <div class="show"><a href="#home">Hover1</a>
+            <div class="show"><a href="#home">Hover1<i class="fa fa-caret-down"></i></a>
                 <div class="hide">
                     <!-- next hover over slide and slide menu will appear -->
-                    <div class="slide"><a href="#test">Hover2</a>
+                    <div class="slide"><a href="#test">Hover2 <i class="fa-solid fa-caret-right"></i></a>
                         <div class="hide2">
                             <a href="#test">TEXT2</a>
                             <a href="#test">TEXT2</a>
