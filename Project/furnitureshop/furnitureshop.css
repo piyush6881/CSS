@@ -49,6 +49,12 @@ hr{
     padding: 10px;
     font-size: 11px;
 }
+.log a:hover {
+    zoom: 120%;
+    transition: ease-in-out;
+    transition: 10ms;
+    color: #c2977d;  
+}
 
 a {
     text-decoration: none;
@@ -60,8 +66,7 @@ a {
     zoom: 120%;
     transition: ease-in-out;
     transition: 10ms;
-    color: #c2977d;
-    
+    color: #c2977d;  
 }
 
 .icon {
@@ -82,6 +87,7 @@ h6 {
 
 h1 {
     font-size: 65px;
+    padding-bottom: 30px;
 }
 
 h4 {
@@ -203,10 +209,15 @@ button:hover {
     padding: 10px;
 }
 .division{
-    width: 50px;
     margin: 0 auto;
     color: #000000;
-    padding: 20px;
+    line-height: 20px;
+    text-align: center;
+    width: 80%;
+    padding-bottom: 30px;
+}
+.bg{
+    background-color: #e7e7e7;
 }
 .colimg {
     width: 100%;
@@ -221,7 +232,7 @@ button:hover {
 
 h2 {
     font-size: 32px;
-    text-align: center;
+    
     color: #000000;
 }
 
@@ -420,5 +431,21 @@ h3 {
         display: flex;
         flex-direction: column;
     }
-
+    .rows{
+        display: flex;
+        flex-direction: column;
+    }
+    .col50{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .col502{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .col25{
+        width: 50%;
+        margin: 0 auto;
+    }
+    
 }
